@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <section>
+        <h2>Payment Information</h2>
+        <form action="">
+            <fieldset>
+                <p>
+                    <label for="name">Enter your name:</label>
+                    <input type="text" id="name" minlength="5" maxlength="30" required>
+                </p>
+                <p>
+                    <label for="card-type">Select your card type:</label>
+                    <input list="card-type" id="card-type" name="card-type">
+                    <datalist id="cards">
+                        <option value="Visa"></option>
+                        <option value="Mastercard"></option>
+                        <option value="Мир"></option>
+                        <option value="Белкарт"></option>
+                    </datalist>
+                </p>
+                <p>
+                    <label for="card-number">Enter your card number:
+                    </label>
+                    <input type="text" id="card-number" minlength="16" maxlength="19" required>
+                </p>
+                <p>
+                    <label for="state-province">State / Province:</label>
+                    <select name="state" id="state-province">
+                        <option value="">Please select</option>
+                        <option value="minsk">Minsk</option>
+                        <option value="brest-reg">Brest Region</option>
+                        <option value="vitabsk-reg">Vitebsk Region</option>
+                        <option value="gomel-reg">Gomel Region</option>
+                        <option value="grodno-reg">Grodno Region</option>
+                        <option value="minsk-reg">Minsk Region</option>
+                        <option value="mogilev-reg">Mogilev Region</option>
+                        <option value="other">Other</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="expiry-date">Expiry date:</label>
+                    <input type="date" id="expiry-date" value="2023-04-28" min="2023-04-01" max="2026-05-01">
+                </p>
+            </fieldset>
+        </form>
+    </section>
+
+</body>
+
+</html>

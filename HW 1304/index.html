@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW 1304</title>
+</head>
+
+<body>
+    <section>
+        <h2>Регистрация участников</h2>
+        <form method="post" action="register.php">
+            <fieldset>
+                <div>
+                    <label for="username">Введите свое имя:</label>
+                    <input type="text" id="username" name="username" minlength="3" maxlength="17" placeholder="Иван" required>
+                </div>
+                <div>
+                    <label for="surname">Введите свю фамилию:</label>
+                    <input type="text" id="surname" name="surname" minlength="5" maxlength="25" placeholder="Иванов" required>
+                </div>
+                <div>
+                    <label for="email">Введите свой адрес электронной почты:</label>
+                    <input type="email" id="email" name="email" placeholder="ivanov@mail.ru" required>
+                </div>
+                <div>
+                    <label for="agreement">Согласен с обработкой данных</label>
+                    <input type="checkbox" id="agreement" name="agreement">
+                </div>
+                <div>
+                    <input type="submit" value="Завершить регистрацию" />
+                </div>
+            </fieldset>
+        </form>
+    </section>
+    </body>
+
+</html>
