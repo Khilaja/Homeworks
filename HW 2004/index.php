@@ -48,6 +48,15 @@ class Student{
 
 $student = new Student('Таня', 'Иваненко', 32, 5);
 echo $student->studentInfo();
+$student->setFirstName('Иван');
+$student->setFamilyName('Иванов');
+$student->setAge(18);
+$student->setCourse("Инженер");
+echo $student->getFirstName();
+echo $student->getFamilyName();
+echo $student->getAge();
+echo $student->getCourse();
+
 
 class Auto {
     public $brand;
@@ -110,6 +119,14 @@ class Auto {
 
 $auto = new Auto('Chrysler', 'Pacifica','black', 2004);
 echo $auto->carInfo();
+$auto->setBrand('BMW');
+$auto->setModel('X5');
+$auto->setColor('Yellow');
+$auto->setYearRelease(2022);
+echo $auto->getBrand();
+echo $auto->getModel();
+echo $auto->getColor();
+echo $auto->getYearRelease();
 
 class Circle{
     public $radius;
